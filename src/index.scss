@@ -1,0 +1,94 @@
+:root { //глобальные переменные
+  --main-color: #028aa0;
+  --main-font: -apple-system, BlinkMacSystemFont, "Trebuchet MS", Helvetica, "Nimbus Sans L", sans-serif;
+  --red: rgb(249, 91, 91);
+}
+
+* {
+  box-sizing: border-box;
+  outline-color: #87cefa;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  margin: 0;
+  line-height: 1.4;
+  font-family: var(--main-font);
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  background: var(--main-color);
+}
+
+main {
+  background: #fff;
+  min-height: calc(100vh - 60px - 110px);
+  svg.loading {
+    position: fixed;
+    left: calc(50vw - 50px);
+    top: 200px;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: var(--main-color);
+  color: #fff;
+  height: 110px;
+  justify-content: center;
+  
+  > * {
+    margin-right: 1rem;
+  }
+}
+
+textarea {
+  width: 100%;
+  font-size: 16px;
+  font-family: inherit;
+  border: none;
+  border-bottom: 2px solid #0001;
+  display: block;
+  outline: 0;
+
+  &:focus {
+      border-bottom: 2px solid #ffdb4d;
+  }
+}
+ul {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+h1 { font-weight: 400; }
+h2, h3 {
+  margin-inline-start: 1rem;
+}
+
+button {
+  border: none;
+  opacity: 1;
+  outline: none;
+  cursor: pointer;
+
+  &:active, &:focus {
+    animation: linear .5s buyAnim;
+  }
+}
+select, input {
+  font-size: 16px;
+}
+
+@keyframes buyAnim {
+  from { opacity: 1; }
+  50%  { opacity: .5; }
+  to   { opacity: 1; }
+}
