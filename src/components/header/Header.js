@@ -19,7 +19,7 @@ export default function Header(props) {
     return (
       <header>
         <div>
-          <a href="#home" className="logo"><b>TopSystems Chat</b></a>
+          <a href="#home" className="logo"><b>TotSystems Chat</b></a>
           <nav className="cd-main-nav-wrapper">
             <ul className="cd-main-nav">
 
